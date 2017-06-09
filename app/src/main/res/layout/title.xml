@@ -15,7 +15,7 @@
         android:text="back"
         android:textColor="#fff"/>
     <TextView
-        android:id="@+id/title_text"
+        android:id="@+id/title_tex"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

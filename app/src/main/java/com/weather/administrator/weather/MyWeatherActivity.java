@@ -35,26 +35,6 @@ public class MyWeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_weather);
-        Button button1 = (Button) findViewById(R.id.button_1);
-        button1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MyWeatherActivity.this,"Go to the SecondActivity",
-                        Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MyWeatherActivity.this,SecondActivity.class);
-                startActivity(intent);
-            }
-        });
-        Button button2 = (Button) findViewById(R.id.button_3);
-        button2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MyWeatherActivity.this,"Go to the ThirdActivity",
-                        Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MyWeatherActivity.this,Third.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }

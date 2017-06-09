@@ -9,22 +9,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.weather.administrator.weather.MyWeatherActivity">
-
-
-    <Button
-        android:id="@+id/button_1"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go to the SecondActivity"
-        android:textAllCaps="false"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Go to the ThirdActivity"
-        android:textAllCaps="false"
-        android:layout_below="@+id/button_1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <fragment
+            android:id="@+id/choose_area_fragment"
+            android:name="com.weather.administrator.weather.ChooseAreaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+
 </RelativeLayout>
